@@ -5,35 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALCULATOR</title>
 </head>
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 <body>
-    <div>
-        <button>AC</button>
-        <button>%</button>
-        <button>/</button>
+    <div class="display" id="display">
+        <div data-big-display class="big-display"></div>
+        <div data-small-display class="small-display"></div>
     </div>
     <div>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>*</button>
+        <button data-all-clear>AC</button>
+        <button data-operator>%</button>
+        <button data-operator>/</button>
     </div>
     <div>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operator>*</button>
     </div>
     <div>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>+</button> 
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operator>-</button>
+    </div>
+    <div>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operator>+</button> 
     </div>
     <div>     
-        <button>0</button>
-        <button>.</button>
-        <button>=</button>
+        <button data-number>0</button>
+        <button data-number>.</button>
+        <button data-equals>=</button>
     </div>
 </body>
 </html>
